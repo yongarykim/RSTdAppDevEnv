@@ -1,0 +1,51 @@
+
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.yongary'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+jar {
+	baseName = 'ethereum-RST-dApp'
+	archiveName baseName + version +'.jar'
+	//dependsOn configurations.runtime
+	from {
+		configurations.compile.collect {it.isDirectory()? it: zipTree(it)}
+	}
+	into('static') {
+		from('../react-frontend/build')
+	}
+}
+
+bootRepackage {
+	enabled = true
+	mainClass = 'com.yongary.kim.RSTApplication'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile project(':react-frontend')
+
+	compile('org.projectlombok:lombok')
+    compile('org.slf4j:slf4j-api')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}

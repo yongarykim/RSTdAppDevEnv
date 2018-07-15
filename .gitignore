@@ -1,0 +1,9 @@
+/.idea/
+/.gradle/
+/react-frontend/build/
+/react-frontend/node_modules/
+/react-frontend/public/*.json
+/springboot-backend/build/
+/springboot-backend/out/
+/truffle/build/
+/truffle/node_modules/
