@@ -6,7 +6,7 @@
 -  js의 상속활용을 극대화하고, 비동기호출일 수 밖에 없는 블록체인개발환경에서 callback hell을 탈출하는 좋은 방법이다.
 
 
-**RST** Ethereum DevEnvironment (in testing) - yongary.kim@gmail.com
+## RST - Ethereum DevEnvironment - yongary.kim@gmail.com
 
 - 개발툴은 IntelliJ IDEA ULTIMATE,  2017.2.7 버전을 사용중 
   (https://www.jetbrains.com/idea/download/previous.html)
