@@ -1,7 +1,7 @@
 
-프론트엔드/백엔드/solidity를 통합개발하는 종합적인 이더리움 dApp개발환경이다.
-dApp개발시에는 복잡한 javascript를 위해서는 ES6-javascript를 추천하며, 그 중에서도 UI와 js가 잘 분리된 react.js를 추천한다.
-React.js를 중심으로, 백엔드는 springBoot를 이용하고, solidty는 truffle을 사용하는데
+- 프론트엔드/백엔드/solidity를 통합개발하는 종합적인 이더리움 dApp개발환경이다.
+- dApp개발시에는 복잡한 javascript를 위해서는 ES6-javascript를 추천하며, 그 중에서도 UI와 js가 잘 분리된 react.js를 추천한다.
+- React.js를 중심으로, 백엔드는 springBoot를 이용하고, solidty는 truffle을 사용하는데
 그 3가지를 IntelliJ하나에서 다 개발할수 있도록 묶은 개발환경이며, 이름을 RST 이더리움dApp 개발환경으로 부른다.
 -  js의 상속활용을 극대화하고, 비동기호출일 수 밖에 없는 블록체인개발환경에서 callback hell을 탈출하는 좋은 방법이다.
 
